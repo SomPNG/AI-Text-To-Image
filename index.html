@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Text To Image | SomPNG</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="wrapper">
+        <div class="container">
+
+        <div class="header">
+            <div class="logo-wrapper">
+                <div class="logo">
+                    <i class="fa-solid fa-wand-magic-sparkles"></i>
+                </div>
+                <h1>AI Image Generator</h1>
+            </div>
+
+            <button class="theme-toggle">
+                <i class="fa-solid"></i>
+            </button>
+
+        </div>
+
+        <div class="main">
+            <form action="#" class="prompt-form">
+                <div class="prompt-container">
+                    <textarea class="prompt-input" placeholder="Describe your imagination..." required autofocus></textarea>
+                    <button type="button" class="prompt-btn">
+                        <i class="fa-solid fa-dice"></i>
+                    </button>
+                </div>
+
+                <div class="prompt-actions">
+                    <div class="select-wrapper">
+                        <select class="custom-select" required id="model-select">
+                            <option value="" selected disabled>Select Model</option>
+                            <option value="black-forest-labs/FLUX.1-dev">FLUX.1-dev</option>
+                            <option value="black-forest-labs/FLUX.1-schnell">FLUX.1-schnell</option>
+                            <option value="stabilityai/stable-diffusion-xl-base-1.0">Stable Diffusion XL</option>
+                            <option value="stabilityai/stable-diffxl-base-1.0">OpenJourney</option>
+                        </select>
+                    </div>
+                    <div class="select-wrapper">
+                        <select class="custom-select" required id="image-count">
+                            <option value="" selected disabled>Image Count</option>
+                            <option value="1">1 Images</option>
+                            <option value="2">2 Images</option>
+                            <option value="3">3 Images</option>
+                            <option value="4">4 Images</option>
+                        </select>
+                    </div>
+                    <div class="select-wrapper">
+                        <select class="custom-select" required id="aspect-ratio">
+                            <option value="" selected disabled>Aspect Ratio</option>
+                            <option value="1/1">square (1:1)</option>
+                            <option value="16/9">Landscape (16:9)</option>
+                            <option value="9/16">Potrait (9:16)</option>
+                        </select>
+                    </div>
+
+                    <button type="submit" class="generate-btn">
+                        <i class="fa-solid fa-wand-sparkles"></i>
+                        <p>Generate</p>
+                    </button>
+                </div>
+
+                <div class="gallery-grid"></div>
+                </div>
+                
+                
+            </form>
+        </div>
+    </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
