@@ -301,7 +301,7 @@ function getImageDimensions(aspectR , baseSize = 512){
 
 const generateBtn = document.querySelector('.generate-btn');
 
-const API_KEY = "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";
+const API_KEY = "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";
 async function generateImages(selectedModel,selectedImageCount,selectedAspectRatio,promptText){
     const MODEL_URL = `https://router.huggingface.co/hf-inference/models/${selectedModel}`;
     const {width,height}=getImageDimensions(selectedAspectRatio);
